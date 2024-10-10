@@ -1,5 +1,5 @@
-# Clarity
-Clarity is an open-source behavioral analytics library written in typescript, with two key goals: privacy & performance. 
+# Frustration Clarity
+This is a version of Clarity that focuses on User Frustration Metrics. Clarity is an open-source behavioral analytics library written in typescript, with two key goals: privacy & performance. 
 
 It helps you understand how users view and use your website across all modern devices and browsers. Understanding how users navigate, interact and browse your website can provide new insights about your users. Empathizing with your users and seeing where features fail or succeed can help improve your product, grow revenue and improve user retention.
 
