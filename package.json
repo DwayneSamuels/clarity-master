@@ -1,0 +1,29 @@
+{
+  "name": "clarity",
+  "private": true,
+  "version": "0.7.48",
+  "repository": "https://github.com/microsoft/clarity.git",
+  "author": "Sarvesh Nagpal <sarveshn@microsoft.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "version": "npx lerna version",
+    "build": "npx lerna run build --stream",
+    "build:js": "yarn workspace clarity-js build",
+    "build:decode": "yarn workspace clarity-decode build",
+    "build:visualize": "yarn workspace clarity-visualize build",
+    "build:devtools": "yarn workspace clarity-devtools build",
+    "test": "yarn workspace clarity-js test"
+  },
+  "devDependencies": {
+    "lerna": "^6.4.1",
+    "parse-url": "^8.1.0"
+  },
+  "resolutions": {
+    "parse-url": "^8.1.0"
+  }
+}

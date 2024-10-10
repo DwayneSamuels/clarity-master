@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clarity Inspector</title>
+  <style>
+    body {
+      margin:0px;
+      padding:0px;
+      text-align: center;
+    }
+
+    iframe {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      border: 0;
+    }
+
+    #info {
+      margin: 30px 30px 10px;
+      font-size: 200%;
+    }
+
+    #header {
+      height: 100px;
+      overflow: hidden;
+    }
+
+    #header div {
+      font-size: 8px;
+    }
+
+    #header div span {
+      border: 2px solid #CCC;
+      margin: 5px;
+      padding: 3px;
+      background: #CCC;
+    }
+    
+    #header div span.visible, #header div span.clicked {
+      background: lightgreen;
+      border-color: lightgreen;
+    }
+
+    #header div span.clicked {
+      border-color: green;
+    }
+
+    #download {
+      height: 20px;
+    }
+
+    .loader {
+      border: 2px solid #f3f3f3;
+      border-top: 2px solid black;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    ul {
+      list-style: none;
+      margin: 15px auto 10px;
+      padding: 0;
+    }
+
+    ul li {
+      display: inline-block;
+      width: 50px;
+      height: 30px;
+      margin-left: 10px;
+      font-size: 6px;
+    }
+
+    ul li h2 {
+      width: 100%;
+      text-align: center;
+      height: 20px;
+      margin: 0;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 5px;
+      background: green;
+      color: white;
+    }
+
+    ul li h2 span {
+      font-size: 8px;
+    }
+    
+    #download {
+      display: none;
+      margin-bottom: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="info"><span>Activating Clarity</span><div class="loader"></div></div>
+  <div id="header"></div>
+  <div id="download"><a href="#">Encoded Data (Session)</a> | <a href="#">Decoded Data (Page)</a> | <a href="#">Merged Data (Page)</a></div>
+  <iframe id="clarity" title="Clarity Inspector" scrolling="no"></iframe>
+  <script src="panel.js"></script>
+</body>
+</html>

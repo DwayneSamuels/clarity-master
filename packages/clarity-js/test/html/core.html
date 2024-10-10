@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Core Tests</title>
+  <style>input, textarea, select { margin: 10px; display: block; }</style>
+</head>
+<body>
+  <div>
+    <h1 id="one">Thanks for your order #2AB700GH</h1>
+    <p id="two" class="address-details">1 Microsoft Way, Redmond, WA - 98052</p>
+  </div>
+  <div id="mask">
+    <span id="child">Hello Wor1d</span>
+  </div>
+  <form name="login">
+    <input type="email" id="eml" title="Email" value="random@email.test">
+    <input type="password" id="pwd" title="Password" maxlength="16" value="passw0rd">
+    <input type="search" id="search" title="Search" value="hello w0rld">
+    <input type="text" id="cardnum" title="CC" value="1234">
+    <textarea id="textarea" autocapitalize="off" role="combobox" rows="5" placeholder="" spellcheck="false">Hell0 World</textarea>
+    <select id="select" ng-options="origin.code" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <option id="option1" label="Halifax" value="string:YHZ">Halifax</option>
+      <option id="option2" label="Montréal" value="string:YUL" selected="selected">Montréal</option>
+    </select>
+  </form>
+</body>
+</html>
